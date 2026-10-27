@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crystal Le — SVG Scene</title>
+</head>
+<body>
+<!-- This part is the title of my artwork -->
+  <h1>A castle under the night sky</h1>
+  <!-- This part is where I made my castle scene -->
+<svg viewBox="0 0 640 480" width="400" height="300" role="img" aria-labelledby="scene-title" xmlns="http://www.w3.org/2000/svg">
+    <!-- This is what gives my SVG a title -->
+    <title id="scene-title">A castle under the night sky</title>
+    
+    <defs>
+      <!-- This part is the gradient that blends two colors together -->
+      <linearGradient id="moon-gradient" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#ff0000"/>
+        <stop offset="100%" stop-color="#00ffff"/>
+      </linearGradient>
+      
+      <linearGradient id="star-gradient" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#ffff00"/>
+        <stop offset="100%" stop-color="#0000ff"/>
+      </linearGradient>
+    </defs>
+
+    <!-- This is the rectangle which creates the night sky -->
+    <rect x="0" y="0" width="640" height="100" fill="#000000" stroke="#000000" stroke-width="2" />
+
+    <!-- This is the circle to create the moon -->
+    <circle cx="39" cy="36" r="32" fill="url(#moon-gradient)" />
+
+    <!-- This groups the stars together and makes them the gradient color -->
+    <g fill="url(#star-gradient)">
+      <polygon points="110.5,31.1 116.5,53.3 139.4,52.1 120.1,64.6 128.4,86.1 110.5,71.6 92.6,86.1 100.9,64.6 81.6,52.1 104.5,53.3 110.5,31.1 116.5,53.3"/>
+      <polygon points="135.0,6.5 139.1,19.4 154.9,18.7 141.6,26.0 147.3,38.5 135.0,30.1 122.7,38.5 128.4,26.0 115.1,18.7 130.9,19.4 135.0,6.5 139.1,19.4"/>
+      <polygon points="195.0,61.5 198.7,73.6 212.9,73.0 201.0,79.8 206.1,91.5 195.0,83.6 183.9,91.5 189.0,79.8 177.1,73.0 191.3,73.6 195.0,61.5 198.7,73.6"/>
+      <polygon points="214.5,28.5 219.1,41.4 236.9,40.7 222.0,48.0 228.4,60.5 214.5,52.1 200.7,60.5 207.0,48.0 192.1,40.7 209.9,41.4 214.5,28.5 219.1,41.4"/>
+      <polygon points="239.3,50.3 244.9,68.9 266.7,67.9 248.4,78.3 256.2,96.3 239.3,84.2 222.3,96.3 230.1,78.3 211.8,67.9 233.6,68.9 239.3,50.3 244.9,68.9"/>
+      <polygon points="240.3,2.7 244.4,15.6 260.2,14.9 246.9,22.2 252.6,34.7 240.3,26.3 227.9,34.7 233.6,22.2 220.3,14.9 236.2,15.6 240.3,2.7 244.4,15.6"/>
+      <polygon points="200.3,-0.3 203.9,11.8 218.2,11.2 206.2,18.0 211.3,29.7 200.3,21.8 189.2,29.7 194.3,18.0 182.3,11.2 196.6,11.8 200.3,-0.3 203.9,11.8"/>
+      <polygon points="157.8,53.7 162.4,66.6 180.2,65.9 165.2,73.2 171.6,85.7 157.8,77.3 143.9,85.7 150.3,73.2 135.3,65.9 153.1,66.6 157.8,53.7 162.4,66.6"/>
+      <polygon points="174.0,21.0 177.6,34.7 191.4,34.0 179.8,41.7 184.8,55.0 174.0,46.1 163.2,55.0 168.2,41.7 156.6,34.0 170.4,34.7 174.0,21.0 177.6,34.7"/>
+      <polygon points="269.0,31.0 272.4,44.7 285.4,44.0 274.5,51.7 279.2,65.0 269.0,56.1 258.9,65.0 263.5,51.7 252.6,44.0 265.6,44.7 269.0,31.0 272.4,44.7"/>
+      <polygon points="288.0,8.0 291.4,19.3 304.4,18.7 293.5,25.1 298.2,36.0 288.0,28.6 277.9,36.0 282.5,25.1 271.6,18.7 284.6,19.3 288.0,8.0 291.4,19.3"/>
+      <polygon points="362.0,6.0 365.4,18.1 378.4,17.5 367.5,24.3 372.2,36.0 362.0,28.1 351.9,36.0 356.5,24.3 345.6,17.5 358.6,18.1 362.0,6.0 365.4,18.1"/>
+      <polygon points="343.0,32.0 346.8,45.7 361.4,45.0 349.1,52.7 354.4,66.0 343.0,57.1 331.6,66.0 336.9,52.7 324.6,45.0 339.2,45.7 343.0,32.0 346.8,45.7"/>
+      <polygon points="325.0,63.0 328.2,75.1 340.4,74.5 330.1,81.3 334.5,93.0 325.0,85.1 315.5,93.0 319.9,81.3 309.6,74.5 321.8,75.1 325.0,63.0 328.2,75.1"/>
+      <polygon points="322.0,6.0 325.6,16.9 339.4,16.3 327.8,22.5 332.8,33.0 322.0,25.9 311.2,33.0 316.2,22.5 304.6,16.3 318.4,16.9 322.0,6.0 325.6,16.9"/>
+      <polygon points="306.5,30.0 310.2,43.7 324.4,43.0 312.5,50.7 317.6,64.0 306.5,55.1 295.4,64.0 300.5,50.7 288.6,43.0 302.8,43.7 306.5,30.0 310.2,43.7"/>
+      <polygon points="290.5,55.0 294.4,69.9 309.4,69.1 296.8,77.6 302.2,92.0 290.5,82.3 278.8,92.0 284.2,77.6 271.6,69.1 286.6,69.9 290.5,55.0 294.4,69.9"/>
+      <polygon points="385.5,33.1 391.5,55.3 414.4,54.1 395.1,66.6 403.4,88.1 385.5,73.6 367.6,88.1 375.9,66.6 356.6,54.1 379.5,55.3 385.5,33.1 391.5,55.3"/>
+      <polygon points="410.0,8.5 414.1,21.4 429.9,20.7 416.6,28.0 422.3,40.5 410.0,32.1 397.7,40.5 403.4,28.0 390.1,20.7 405.9,21.4 410.0,8.5 414.1,21.4"/>
+      <polygon points="470.0,63.5 473.7,75.6 487.9,75.0 476.0,81.8 481.1,93.5 470.0,85.6 458.9,93.5 464.0,81.8 452.1,75.0 466.3,75.6 470.0,63.5 473.7,75.6"/>
+      <polygon points="489.5,30.5 494.1,43.4 511.9,42.7 497.0,50.0 503.4,62.5 489.5,54.1 475.7,62.5 482.0,50.0 467.1,42.7 484.9,43.4 489.5,30.5 494.1,43.4"/>
+      <polygon points="514.3,52.3 519.9,70.9 541.7,69.9 523.4,80.3 531.2,98.3 514.3,86.2 497.3,98.3 505.1,80.3 486.8,69.9 508.6,70.9 514.3,52.3 519.9,70.9"/>
+      <polygon points="515.3,4.7 519.4,17.6 535.2,16.9 521.9,24.2 527.6,36.7 515.3,28.3 502.9,36.7 508.6,24.2 495.3,16.9 511.2,17.6 515.3,4.7 519.4,17.6"/>
+      <polygon points="475.3,1.7 478.9,13.8 493.2,13.2 481.2,20.0 486.3,31.7 475.3,23.8 464.2,31.7 469.3,20.0 457.3,13.2 471.6,13.8 475.3,1.7 478.9,13.8"/>
+      <polygon points="432.8,55.7 437.4,68.6 455.2,67.9 440.2,75.2 446.6,87.7 432.8,79.3 418.9,87.7 425.3,75.2 410.3,67.9 428.1,68.6 432.8,55.7 437.4,68.6"/>
+      <polygon points="449.0,23.0 452.6,36.7 466.4,36.0 454.8,43.7 459.8,57.0 449.0,48.1 438.2,57.0 443.2,43.7 431.6,36.0 445.4,36.7 449.0,23.0 452.6,36.7"/>
+      <polygon points="544.0,33.0 547.4,46.7 560.4,46.0 549.5,53.7 554.2,67.0 544.0,58.1 533.9,67.0 538.5,53.7 527.6,46.0 540.6,46.7 544.0,33.0 547.4,46.7"/>
+      <polygon points="563.0,10.0 566.4,21.3 579.4,20.7 568.5,27.1 573.2,38.0 563.0,30.6 552.9,38.0 557.5,27.1 546.6,20.7 559.6,21.3 563.0,10.0 566.4,21.3"/>
+      <polygon points="624.5,6.0 627.0,15.3 636.4,14.8 628.5,20.0 631.9,29.0 624.5,22.9 617.1,29.0 620.5,20.0 612.6,14.8 622.1,15.3 624.5,6.0 627.0,15.3"/>
+      <polygon points="618.0,34.0 621.8,47.7 636.4,47.0 624.1,54.7 629.4,68.0 618.0,59.1 606.6,68.0 611.9,54.7 599.6,47.0 614.2,47.7 618.0,34.0 621.8,47.7"/>
+      <polygon points="600.0,65.0 603.2,77.1 615.4,76.5 605.1,83.3 609.5,95.0 600.0,87.1 590.5,95.0 594.9,83.3 584.6,76.5 596.8,77.1 600.0,65.0 603.2,77.1"/>
+      <polygon points="597.0,8.0 600.6,18.9 614.4,18.3 602.8,24.5 607.8,35.0 597.0,27.9 586.2,35.0 591.2,24.5 579.6,18.3 593.4,18.9 597.0,8.0 600.6,18.9"/>
+      <polygon points="581.5,32.0 585.2,45.7 599.4,45.0 587.5,52.7 592.6,66.0 581.5,57.1 570.4,66.0 575.5,52.7 563.6,45.0 577.8,45.7 581.5,32.0 585.2,45.7"/>
+      <polygon points="565.5,57.0 569.4,71.9 584.4,71.1 571.8,79.6 577.2,94.0 565.5,84.3 553.8,94.0 559.2,79.6 546.6,71.1 561.6,71.9 565.5,57.0 569.4,71.9"/>
+      <polygon points="94.0,6.5 97.1,19.0 108.9,18.3 99.0,25.4 103.2,37.5 94.0,29.3 84.8,37.5 89.0,25.4 79.1,18.3 90.9,19.0 94.0,6.5 97.1,19.0"/>
+      <polygon points="352.0,65.5 354.5,74.8 363.9,74.3 356.0,79.5 359.4,88.5 352.0,82.4 344.6,88.5 348.0,79.5 340.1,74.3 349.5,74.8 352.0,65.5 354.5,74.8"/>
+    </g>
+
+    <!-- This rectangle creates the water -->
+    <rect x="0" y="396.5" width="640" height="83.5" fill="#aad4ff" stroke="#000000" stroke-width="0" />
+
+    <!-- This part is what makes the castle -->
+    <path d="M 178,235 H 220 V 265 H 240 V 195 H 370 V 265 H 388 V 235 H 445 V 396.5 H 178 Z" fill="#0000ff" />
+    <path d="M 221,265 V 315 H 240 V 265 Z" fill="#0000ff" />
+    <path d="M 370,265 V 315 H 388 V 265 Z" fill="#0000ff" />
+
+    <!-- This is a line that creates the ploe for the heart banner -->
+    <line x1="197" y1="235" x2="197" y2="190" stroke="#000000" stroke-width="1.5" />
+    <path d="M 197,185 C 197,185 180,165 180,150 C 180,140 188,132 197,142 C 206,132 214,140 214,150 C 214,165 197,185 197,185 Z" fill="#fca1e6" stroke="#000000" stroke-width="1.5" />
+
+    <!-- This is a line that holds the diamond banner -->
+    <line x1="422" y1="235" x2="422" y2="190" stroke="#000000" stroke-width="1.5" />
+    <polygon points="422,140 447,165 422,190 397,165" fill="#d2a1fc" stroke="#000000" stroke-width="1.5" />
+
+    <!-- This part is the polygon that makes the doorway -->
+    <polygon points="320,290 365,330 355,396.5 285,396.5 275,330" fill="#a0c8f0" />
+
+    <!-- This is the ellipse and I used it to make a platform under the castle -->
+    <ellipse cx="315" cy="440" rx="136" ry="28" fill="#75ffff" />
+
+    <!-- This is the text labels what the artwork is -->
+    <text x="315" y="455" text-anchor="middle" font-family="Times New Roman, serif" font-size="48" fill="#000000">A Castle</text>
+  </svg>
+   <!-- This part explains what shapes and colors I used in my artwork -->
+  <p>A 400×300 of a castle in the night sky. This used a rectangle to make the sky and stars to make it look starry and a circle for the moon. Another rectangle was used for the water. I also used the ellipse for a platform and a text to label the castle. The stars all be within a <code>&lt;g&gt;</code> group.</p>
+
+   <!-- This is the reflection that tells you the making process of the artwork-->
+  <p><strong>Reflection:</strong> The hardest shape to make was the polygon only becasue at first I had to find out hot make into a doorway and shape it how I wanted it, but in the end I was able to make it work. I played around with the colors to see what worked, but not out it worked with a solid color, so I made some with gradient colors. It took me time to figure out what colors I wanted becasue whaen I tried some colors it didnt turn out right so I play around with many differetn colors till I got what I wanted. I have seen like other people make SVG in different ways, just not like how I did mine. It have been inspired, but not the same.</p>
+
+</body>
+</html>
